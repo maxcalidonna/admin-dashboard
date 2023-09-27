@@ -9,6 +9,7 @@ import CreditCardOutline from 'mdi-material-ui/CreditCardOutline'
 import AccountPlusOutline from 'mdi-material-ui/AccountPlusOutline'
 import AlertCircleOutline from 'mdi-material-ui/AlertCircleOutline'
 import GoogleCirclesExtended from 'mdi-material-ui/GoogleCirclesExtended'
+import Account from 'mdi-material-ui/Account'
 
 const navigation = () => {
   return [
@@ -37,16 +38,16 @@ const navigation = () => {
       path: '/pages/register',
       openInNewTab: true
     },
-    {
+    /*{
       title: 'Error',
       icon: AlertCircleOutline,
       path: '/pages/error',
       openInNewTab: true
-    },
+    },*/
     {
       sectionTitle: 'User Interface'
     },
-    {
+    /*{
       title: 'Typography',
       icon: FormatLetterCase,
       path: '/typography'
@@ -66,10 +67,16 @@ const navigation = () => {
       icon: Table,
       path: '/tables'
     },
+    
     {
       icon: CubeOutline,
       title: 'Form Layouts',
       path: '/form-layouts'
+    },*/
+    {
+      title: 'Clienti',
+      icon: Account,
+      path: '/clienti'
     }
   ]
 }
