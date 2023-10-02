@@ -68,7 +68,7 @@ const TabAccount = () => {
               <ImgStyled src={imgSrc} alt='Profile Pic' />
               <Box>
                 <ButtonStyled component='label' variant='contained' htmlFor='account-settings-upload-image'>
-                  Upload New Photo
+                  Upload Nuova Foto
                   <input
                     hidden
                     type='file'
@@ -81,51 +81,51 @@ const TabAccount = () => {
                   Reset
                 </ResetButtonStyled>
                 <Typography variant='body2' sx={{ marginTop: 5 }}>
-                  Allowed PNG or JPEG. Max size of 800K.
+                  Formati accettati PNG o JPEG. Dimensione Max 800K.
                 </Typography>
               </Box>
             </Box>
           </Grid>
 
           <Grid item xs={12} sm={6}>
-            <TextField fullWidth label='Username' placeholder='johnDoe' defaultValue='johnDoe' />
+            <TextField fullWidth label='Username' placeholder='max' defaultValue='max' />
           </Grid>
           <Grid item xs={12} sm={6}>
-            <TextField fullWidth label='Name' placeholder='John Doe' defaultValue='John Doe' />
+            <TextField fullWidth label='Nome' placeholder='Max Calidonna' defaultValue='Max Calidonna' />
           </Grid>
           <Grid item xs={12} sm={6}>
             <TextField
               fullWidth
               type='email'
               label='Email'
-              placeholder='johnDoe@example.com'
-              defaultValue='johnDoe@example.com'
+              placeholder='max.calidonna@gmail.com'
+              defaultValue='max.calidonna@gmail.com'
             />
           </Grid>
           <Grid item xs={12} sm={6}>
             <FormControl fullWidth>
-              <InputLabel>Role</InputLabel>
+              <InputLabel>Ruolo</InputLabel>
               <Select label='Role' defaultValue='admin'>
-                <MenuItem value='admin'>Admin</MenuItem>
-                <MenuItem value='author'>Author</MenuItem>
-                <MenuItem value='editor'>Editor</MenuItem>
-                <MenuItem value='maintainer'>Maintainer</MenuItem>
-                <MenuItem value='subscriber'>Subscriber</MenuItem>
+                <MenuItem value='admin'>Amministratore</MenuItem>
+                <MenuItem value='author'>User</MenuItem>
+                <MenuItem value='editor'>Operatore</MenuItem>
+                {/*<MenuItem value='maintainer'>Maintainer</MenuItem>
+                <MenuItem value='subscriber'>Subscriber</MenuItem>*/}
               </Select>
             </FormControl>
           </Grid>
           <Grid item xs={12} sm={6}>
             <FormControl fullWidth>
-              <InputLabel>Status</InputLabel>
+              <InputLabel>Stato</InputLabel>
               <Select label='Status' defaultValue='active'>
-                <MenuItem value='active'>Active</MenuItem>
-                <MenuItem value='inactive'>Inactive</MenuItem>
-                <MenuItem value='pending'>Pending</MenuItem>
+                <MenuItem value='active'>Attivo</MenuItem>
+                <MenuItem value='inactive'>Passivo</MenuItem>
+                {/*<MenuItem value='pending'>Pending</MenuItem>*/}
               </Select>
             </FormControl>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <TextField fullWidth label='Company' placeholder='ABC Pvt. Ltd.' defaultValue='ABC Pvt. Ltd.' />
+            <TextField fullWidth label='Azienda' placeholder='Web Dev Italia' defaultValue='Web Dev Italia' />
           </Grid>
 
           {openAlert ? (
@@ -139,9 +139,9 @@ const TabAccount = () => {
                   </IconButton>
                 }
               >
-                <AlertTitle>Your email is not confirmed. Please check your inbox.</AlertTitle>
+                <AlertTitle>La tua Mail non è stata confermata. Perfavore controlla la tua posta.</AlertTitle>
                 <Link href='/' onClick={e => e.preventDefault()}>
-                  Resend Confirmation
+                  Reinvia richiesta conferma
                 </Link>
               </Alert>
             </Grid>
@@ -149,7 +149,7 @@ const TabAccount = () => {
 
           <Grid item xs={12}>
             <Button variant='contained' sx={{ marginRight: 3.5 }}>
-              Save Changes
+              Salva cambiamenti
             </Button>
             <Button type='reset' variant='outlined' color='secondary'>
               Reset

@@ -19,21 +19,21 @@ const navigation = () => {
       path: '/'
     },
     {
-      title: 'Account Settings',
+      title: 'Impostazioni Utente',
       icon: AccountCogOutline,
       path: '/account-settings'
     },
     {
-      sectionTitle: 'Pages'
+      sectionTitle: 'Pagine'
     },
     {
-      title: 'Login',
+      title: 'Accesso utente',
       icon: Login,
       path: '/pages/login',
       openInNewTab: true
     },
     {
-      title: 'Register',
+      title: 'Registrazione utente',
       icon: AccountPlusOutline,
       path: '/pages/register',
       openInNewTab: true
@@ -45,7 +45,7 @@ const navigation = () => {
       openInNewTab: true
     },*/
     {
-      sectionTitle: 'User Interface'
+      sectionTitle: 'Interfaccia Utente'
     },
     /*{
       title: 'Typography',

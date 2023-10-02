@@ -79,7 +79,7 @@ const TabSecurity = () => {
             <Grid container spacing={5}>
               <Grid item xs={12} sx={{ marginTop: 4.75 }}>
                 <FormControl fullWidth>
-                  <InputLabel htmlFor='account-settings-current-password'>Current Password</InputLabel>
+                  <InputLabel htmlFor='account-settings-current-password'>Password corrente</InputLabel>
                   <OutlinedInput
                     label='Current Password'
                     value={values.currentPassword}
@@ -104,7 +104,7 @@ const TabSecurity = () => {
 
               <Grid item xs={12} sx={{ marginTop: 6 }}>
                 <FormControl fullWidth>
-                  <InputLabel htmlFor='account-settings-new-password'>New Password</InputLabel>
+                  <InputLabel htmlFor='account-settings-new-password'>Nuova Password</InputLabel>
                   <OutlinedInput
                     label='New Password'
                     value={values.newPassword}
@@ -129,7 +129,7 @@ const TabSecurity = () => {
 
               <Grid item xs={12}>
                 <FormControl fullWidth>
-                  <InputLabel htmlFor='account-settings-confirm-new-password'>Confirm New Password</InputLabel>
+                  <InputLabel htmlFor='account-settings-confirm-new-password'>Conferma nuova Password</InputLabel>
                   <OutlinedInput
                     label='Confirm New Password'
                     value={values.confirmNewPassword}
@@ -170,7 +170,7 @@ const TabSecurity = () => {
       <CardContent>
         <Box sx={{ mt: 1.75, display: 'flex', alignItems: 'center' }}>
           <KeyOutline sx={{ marginRight: 3 }} />
-          <Typography variant='h6'>Two-factor authentication</Typography>
+          <Typography variant='h6'>Autenticazione a Due Fattori</Typography>
         </Box>
 
         <Box sx={{ mt: 5.75, display: 'flex', justifyContent: 'center' }}>
@@ -190,18 +190,18 @@ const TabSecurity = () => {
               <LockOpenOutline sx={{ fontSize: '1.75rem' }} />
             </Avatar>
             <Typography sx={{ fontWeight: 600, marginTop: 3.5, marginBottom: 3.5 }}>
-              Two factor authentication is not enabled yet.
+            L'autenticazione a due fattori non è ancora abilitata.
             </Typography>
             <Typography variant='body2'>
-              Two-factor authentication adds an additional layer of security to your account by requiring more than just
-              a password to log in. Learn more.
+            L'autenticazione a due fattori aggiunge un ulteriore livello di sicurezza al vostro account,
+             richiedendo più di una semplice password per accedere. Per saperne di più.
             </Typography>
           </Box>
         </Box>
 
         <Box sx={{ mt: 11 }}>
           <Button variant='contained' sx={{ marginRight: 3.5 }}>
-            Save Changes
+            Salva cambiamenti
           </Button>
           <Button
             type='reset'

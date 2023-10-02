@@ -159,9 +159,9 @@ const RegisterPage = () => {
           </Box>
           <Box sx={{ mb: 6 }}>
             <Typography variant='h5' sx={{ fontWeight: 600, marginBottom: 1.5 }}>
-              Adventure starts here 🚀
+              Registrazione nuovo utente 🚀
             </Typography>
-            <Typography variant='body2'>Make your app management easy and fun!</Typography>
+            <Typography variant='body2'>Compila il form per iniziare!</Typography>
           </Box>
           <form noValidate autoComplete='off' onSubmit={e => e.preventDefault()}>
             <TextField autoFocus fullWidth id='username' label='Username' sx={{ marginBottom: 4 }} />
@@ -192,27 +192,27 @@ const RegisterPage = () => {
               control={<Checkbox />}
               label={
                 <Fragment>
-                  <span>I agree to </span>
+                  <span>Accetto la </span>
                   <Link href='/' passHref>
-                    <LinkStyled onClick={e => e.preventDefault()}>privacy policy & terms</LinkStyled>
+                    <LinkStyled onClick={e => e.preventDefault()}>Privacy Policy</LinkStyled>
                   </Link>
                 </Fragment>
               }
             />
             <Button fullWidth size='large' type='submit' variant='contained' sx={{ marginBottom: 7 }}>
-              Sign up
+              Registrati
             </Button>
             <Box sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
               <Typography variant='body2' sx={{ marginRight: 2 }}>
-                Already have an account?
+                Hai già un account?
               </Typography>
               <Typography variant='body2'>
                 <Link passHref href='/pages/login'>
-                  <LinkStyled>Sign in instead</LinkStyled>
+                  <LinkStyled>Entra qui</LinkStyled>
                 </Link>
               </Typography>
             </Box>
-            <Divider sx={{ my: 5 }}>or</Divider>
+            <Divider sx={{ my: 5 }}>oppure</Divider>
             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <Link href='/' passHref>
                 <IconButton component='a' onClick={e => e.preventDefault()}>

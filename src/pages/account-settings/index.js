@@ -71,7 +71,7 @@ const AccountSettings = () => {
             label={
               <Box sx={{ display: 'flex', alignItems: 'center' }}>
                 <LockOpenOutline />
-                <TabName>Security</TabName>
+                <TabName>Sicurezza</TabName>
               </Box>
             }
           />

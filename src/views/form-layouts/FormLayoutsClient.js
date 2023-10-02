@@ -25,6 +25,7 @@ import DatePicker from 'react-datepicker'
 // ** Icons Imports
 import EyeOutline from 'mdi-material-ui/EyeOutline'
 import EyeOffOutline from 'mdi-material-ui/EyeOffOutline'
+import { Checkbox, FormControlLabel, FormGroup } from '@mui/material'
 
 const CustomInput = forwardRef((props, ref) => {
   return <TextField fullWidth {...props} inputRef={ref} label='Birth Date' autoComplete='off' />
@@ -144,14 +145,46 @@ const FormLayoutsClient = () => {
             </Grid>*/}
             <Grid item xs={12}>
               <Typography variant='body2' sx={{ fontWeight: 600 }}>
-                1. Informazioni personali
+                1. Informazioni
               </Typography>
             </Grid>
             <Grid item xs={12} sm={6}>
-              <TextField fullWidth label='Nome' placeholder='Max' />
+              <TextField fullWidth label='Denominazione/Nome e Cognome' placeholder='Web Dev Italia' />
+            </Grid>
+            {/*<Grid item xs={12} sm={6} >
+              <TextField fullWidth label='Cognome' placeholder='Calidonna' />
+            </Grid>*/}
+            <Grid item xs={12} sm={6} >
+              <FormControlLabel control={<Checkbox defaultChecked />} label="Cliente" />
+              <FormControlLabel control={<Checkbox />} label="Fornitore" />
+            </Grid>
+            <Grid item xs={12} sm={6} >
+              <TextField fullWidth label='Codice Fiscale' placeholder='XXXXXX11X11X111X' />
+            </Grid>
+            <Grid item xs={12} sm={6} >
+              <TextField fullWidth label='Partita IVA' placeholder='1111111111' />
+            </Grid>
+            <Grid item xs={12} sm={6} >
+              <TextField fullWidth label='Indirizzo' placeholder='' />
+            </Grid>
+            <Grid item xs={3} sm={1} >
+              <TextField fullWidth label='CAP' placeholder='11111' />
+            </Grid><Grid item xs={6} sm={4} >
+              <TextField fullWidth label='Città' placeholder='XXXXXXXXXXX' />
+            </Grid><Grid item xs={3} sm={1} >
+              <TextField fullWidth label='Provincia' placeholder='XX' />
             </Grid>
             <Grid item xs={12} sm={6}>
-              <TextField fullWidth label='Cognome' placeholder='Calidonna' />
+            <TextField
+              fullWidth
+              type='email'
+              label='Email'
+              placeholder='max.calidonna@gmail.com'
+              defaultValue='max.calidonna@gmail.com'
+            />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+              <TextField fullWidth label='Telefono' placeholder='+39-123-456-8790' />
             </Grid>
             <Grid item xs={12} sm={6}>
               <FormControl fullWidth>
@@ -169,6 +202,22 @@ const FormLayoutsClient = () => {
                 </Select>
               </FormControl>
             </Grid>
+            <Grid item xs={12} sm={6}>
+            <FormControl fullWidth>
+              <InputLabel>Stato</InputLabel>
+              <Select label='Status' defaultValue='active'>
+                <MenuItem value='active'>Attivo</MenuItem>
+                <MenuItem value='inactive'>Passivo</MenuItem>
+                {/*<MenuItem value='pending'>Pending</MenuItem>*/}
+              </Select>
+            </FormControl>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <TextField fullWidth label='Numero Dipendenti' placeholder='11' inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+          <TextField fullWidth label='Numero Sedi' placeholder='1' inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} />
+          </Grid>
             {/*<Grid item xs={12} sm={6}>
               <FormControl fullWidth>
                 <InputLabel id='form-layouts-separator-multiple-select-label'>Language</InputLabel>
@@ -201,9 +250,7 @@ const FormLayoutsClient = () => {
                 onChange={date => setDate(date)}
               />
             </Grid>*/}
-            <Grid item xs={12} sm={6}>
-              <TextField fullWidth label='Telefono' placeholder='+39-123-456-8790' />
-            </Grid>
+            
           </Grid>
         </CardContent>
         <Divider sx={{ margin: 0 }} />
