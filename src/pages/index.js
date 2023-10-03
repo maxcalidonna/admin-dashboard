@@ -42,22 +42,22 @@ const Dashboard = () => {
           <Grid container spacing={6}>
             <Grid item xs={6}>
               <CardStatisticsVerticalComponent
-                stats='$25.6k'
+                stats='€25.6k'
                 icon={<Poll />}
                 color='success'
                 trendNumber='+42%'
-                title='Total Profit'
-                subtitle='Weekly Profit'
+                title='Totale Ricavi'
+                subtitle='Ricavo settimanale'
               />
             </Grid>
             <Grid item xs={6}>
               <CardStatisticsVerticalComponent
-                stats='$78'
-                title='Refunds'
+                stats='€78'
+                title='Rimborsi'
                 trend='negative'
                 color='secondary'
                 trendNumber='-15%'
-                subtitle='Past Month'
+                subtitle='Mese scorso'
                 icon={<CurrencyUsd />}
               />
             </Grid>
@@ -66,8 +66,8 @@ const Dashboard = () => {
                 stats='862'
                 trend='negative'
                 trendNumber='-18%'
-                title='New Project'
-                subtitle='Yearly Project'
+                title='Nuove Offerte'
+                subtitle='Offerte annuali'
                 icon={<BriefcaseVariantOutline />}
               />
             </Grid>
@@ -77,14 +77,14 @@ const Dashboard = () => {
                 color='warning'
                 trend='negative'
                 trendNumber='-18%'
-                subtitle='Last Week'
-                title='Sales Queries'
+                subtitle='Ultima settimana'
+                title='Preventivi accettati'
                 icon={<HelpCircleOutline />}
               />
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={12} md={6} lg={4}>
+        {/*<Grid item xs={12} md={6} lg={4}>
           <SalesByCountries />
         </Grid>
         <Grid item xs={12} md={12} lg={8}>
@@ -92,7 +92,7 @@ const Dashboard = () => {
         </Grid>
         <Grid item xs={12}>
           <Table />
-        </Grid>
+        </Grid>*/}
       </Grid>
     </ApexChartWrapper>
   )
