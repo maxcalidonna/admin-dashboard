@@ -119,8 +119,8 @@ const TabAccount = () => {
               <InputLabel>Stato</InputLabel>
               <Select label='Status' defaultValue='active'>
                 <MenuItem value='active'>Attivo</MenuItem>
-                <MenuItem value='inactive'>Passivo</MenuItem>
-                {/*<MenuItem value='pending'>Pending</MenuItem>*/}
+                <MenuItem value='inactive'>Inattivo</MenuItem>
+                <MenuItem value='pending'>In Sospeso</MenuItem>
               </Select>
             </FormControl>
           </Grid>

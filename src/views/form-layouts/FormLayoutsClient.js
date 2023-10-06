@@ -213,10 +213,10 @@ const FormLayoutsClient = () => {
             </FormControl>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <TextField fullWidth label='Numero Dipendenti' placeholder='11' inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} />
+            <TextField fullWidth label='Numero Dipendenti' type='number' placeholder='11' inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} />
           </Grid>
           <Grid item xs={12} sm={6}>
-          <TextField fullWidth label='Numero Sedi' placeholder='1' inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} />
+          <TextField fullWidth label='Numero Sedi' type='number' placeholder='1' inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} />
           </Grid>
             {/*<Grid item xs={12} sm={6}>
               <FormControl fullWidth>
